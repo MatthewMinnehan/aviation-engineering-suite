@@ -18,33 +18,68 @@
 
         <section class="calculator">
 
-            <label>
-                Airport Elevation (ft)
-                <input id="elevation" type="number">
-            </label>
+            <div class="input-panel">
 
-            <label>
-                Temperature (°C)
-                <input id="temperature" type="number">
-            </label>
+                <div class="panel-title">
+                    INPUT PARAMETERS
+                </div>
 
-            <label>
-                Pressure Altitude (ft)
-                <input id="pressureAltitude" type="number">
-            </label>
+                <label>
+                    <span>Aircraft</span>
 
-            <button id="calculateBtn">
-                Calculate
-            </button>
+                    <select id="aircraft">
+                        <option value="c172">Cessna 172</option>
+                        <option value="da40">Diamond DA40</option>
+                        <option value="sr22">Cirrus SR22</option>
+                    </select>
+                </label>
 
-            <div id="result">
-                Enter values and calculate.
+                <label>
+                    <span>Airport Elevation (ft)</span>
+                    <input id="elevation" type="number">
+                </label>
+
+                <label>
+                    <span>Temperature (°C)</span>
+                    <input id="temperature" type="number">
+                </label>
+
+                <label>
+                    <span>Pressure Altitude (ft)</span>
+                    <input id="pressureAltitude" type="number">
+                </label>
+
+                <button id="calculateBtn">
+                    CALCULATE DENSITY ALTITUDE
+                </button>
+
+            </div>
+
+            <div class="result-panel">
+
+                <div class="panel-title">
+                    RESULT
+                </div>
+
+                <div class="result-circle">
+                    ✈
+                </div>
+
+                <div id="result">
+                    0 ft
+                </div>
+
+                <div class="info-box" id="conditionBox">
+                    Enter values to calculate.
+                </div>
+
             </div>
 
         </section>
 
     </main>
 
+    <script src="aircraft-data.js"></script>
     <script src="app.js"></script>
 
 </body>
