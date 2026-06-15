@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Engineering Suite</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aviation Engineering Suite</h1>
+        <p>Density Altitude Calculator</p>
+    </header>
+
+    <main>
+
+        <section class="calculator">
+
+            <label>
+                Airport Elevation (ft)
+                <input id="elevation" type="number">
+            </label>
+
+            <label>
+                Temperature (°C)
+                <input id="temperature" type="number">
+            </label>
+
+            <label>
+                Pressure Altitude (ft)
+                <input id="pressureAltitude" type="number">
+            </label>
+
+            <button id="calculateBtn">
+                Calculate
+            </button>
+
+            <div id="result">
+                Enter values and calculate.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
